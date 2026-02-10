@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - MRD Tech Shop</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#00f2ea',
+                        secondary: '#7000ff',
+                        dark: '#0a0a0f',
+                        surface: '#12121a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(18, 18, 26, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white font-sans antialiased">
+
+    <!-- Navigation (Same as index) -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-3xl font-bold tracking-tighter text-white">MRD<span
+                            class="text-primary">.TECH</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html"
+                            class="text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="contact.html"
+                            class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 transform hover:scale-105 transition-all">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden glass absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html"
+                    class="text-white block px-3 py-2 rounded-md text-base font-medium bg-primary/10">Services</a>
+                <a href="contact.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 bg-surface text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional <span class="text-primary">Repair Services</span>
+        </h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">From minor fixes to major component level repairs, we handle
+            everything with precision and care.</p>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service 1 -->
+            <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                <div
+                    class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-4 group-hover:bg-primary group-hover:text-black transition-colors">
+                    <i class="fas fa-laptop-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Display Replacement</h3>
+                <p class="text-gray-400 mb-4">Cracked or glitching screen? We replace screens for all laptop models
+                    including Apple, Dell, HP, Lenovo, and Asus.</p>
+                <a href="contact.html"
+                    class="text-primary text-sm font-bold hover:text-white flex items-center gap-2">Get Quote <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                <div
+                    class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center text-secondary text-2xl mb-4 group-hover:bg-secondary group-hover:text-white transition-colors">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Motherboard Repair</h3>
+                <p class="text-gray-400 mb-4">Advanced chip-level repair for dead laptops, charging issues, and liquid
+                    damage recovery.</p>
+                <a href="contact.html"
+                    class="text-secondary text-sm font-bold hover:text-white flex items-center gap-2">Get Quote <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                <div
+                    class="w-14 h-14 bg-green-500/10 rounded-full flex items-center justify-center text-green-400 text-2xl mb-4 group-hover:bg-green-500 group-hover:text-black transition-colors">
+                    <i class="fas fa-battery-full"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Battery Replacement</h3>
+                <p class="text-gray-400 mb-4">Genuine battery replacements for better battery life and device longevity.
+                </p>
+                <a href="contact.html"
+                    class="text-green-400 text-sm font-bold hover:text-white flex items-center gap-2">Get Quote <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                <div
+                    class="w-14 h-14 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl mb-4 group-hover:bg-blue-500 group-hover:text-black transition-colors">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">OS Installation</h3>
+                <p class="text-gray-400 mb-4">Windows, Linux, or macOS installation with drivers and essential software
+                    packages.</p>
+                <a href="contact.html"
+                    class="text-blue-400 text-sm font-bold hover:text-white flex items-center gap-2">Get Quote <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                <div
+                    class="w-14 h-14 bg-orange-500/10 rounded-full flex items-center justify-center text-orange-400 text-2xl mb-4 group-hover:bg-orange-500 group-hover:text-black transition-colors">
+                    <i class="fas fa-keyboard"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Keyboard Replacement</h3>
+                <p class="text-gray-400 mb-4">Fix sticky, broken, or non-responsive keys with a brand new keyboard
+                    module.</p>
+                <a href="contact.html"
+                    class="text-orange-400 text-sm font-bold hover:text-white flex items-center gap-2">Get Quote <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                <div
+                    class="w-14 h-14 bg-red-500/10 rounded-full flex items-center justify-center text-red-400 text-2xl mb-4 group-hover:bg-red-500 group-hover:text-black transition-colors">
+                    <i class="fas fa-virus"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Virus Removal</h3>
+                <p class="text-gray-400 mb-4">Complete system cleanup to remove malware, spyware, and viruses without
+                    losing your data.</p>
+                <a href="contact.html"
+                    class="text-red-400 text-sm font-bold hover:text-white flex items-center gap-2">Get Quote <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050507] pt-16 pb-8 border-t border-white/5 mt-auto">
+        <!-- (Same footer content as index.html, stripped for brevity if desired, but good to keep full) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500 text-sm">© 2026 MRD Tech Shop. <a href="index.html"
+                    class="text-primary hover:underline">Back to Home</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

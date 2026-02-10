@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MRD Tech Shop</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#00f2ea',
+                        secondary: '#7000ff',
+                        dark: '#0a0a0f',
+                        surface: '#12121a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(18, 18, 26, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-3xl font-bold tracking-tighter text-white">MRD<span
+                            class="text-primary">.TECH</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="products.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Laptops</a>
+                        <a href="contact.html"
+                            class="text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden glass absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="products.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Laptops</a>
+                <a href="contact.html"
+                    class="text-white bg-primary/10 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-10 bg-surface text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Get In <span class="text-primary">Touch</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">We are here to help you with all your laptop repair and sales needs.
+        </p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <div class="glass p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-white mb-6">Contact Information</h2>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 group">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-xl group-hover:bg-primary group-hover:text-black transition-all">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm uppercase tracking-wider mb-1">Address</h4>
+                                <p class="text-white text-lg font-medium">B.53 Meegahawela Road,<br>Koswatta, Sri Lanka
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 group">
+                            <div
+                                class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary text-xl group-hover:bg-secondary group-hover:text-white transition-all">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm uppercase tracking-wider mb-1">Phone</h4>
+                                <p class="text-white text-lg font-medium">
+                                    <a href="tel:0764385723" class="hover:text-primary transition-colors">076 438
+                                        5723</a><br>
+                                    <a href="tel:0759703718" class="hover:text-primary transition-colors">075 970
+                                        3718</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 group">
+                            <div
+                                class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center text-green-400 text-xl group-hover:bg-green-500 group-hover:text-black transition-all">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm uppercase tracking-wider mb-1">Email</h4>
+                                <p class="text-white text-lg font-medium">contact@mrdtech.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 group">
+                            <div
+                                class="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-xl group-hover:bg-blue-500 group-hover:text-black transition-all">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-400 text-sm uppercase tracking-wider mb-1">Business Hours</h4>
+                                <p class="text-white text-lg font-medium">Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="glass p-2 rounded-2xl h-80 overflow-hidden relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.468249051676!2d79.9149479!3d6.9073167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2598380b2d357%3A0xe5426c268846c757!2sKoswatta%2C%20Battaramulla!5e0!3m2!1sen!2slk!4v1689234567890!5m2!1sen!2slk"
+                        width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="absolute inset-0 pointer-events-none border border-white/10 rounded-xl"></div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="glass p-8 rounded-2xl relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none">
+                </div>
+
+                <h2 class="text-2xl font-bold text-white mb-6">Send us a Message</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+                            <input type="text" id="name"
+                                class="w-full bg-surface border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
+                            <input type="tel" id="phone"
+                                class="w-full bg-surface border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                                placeholder="07x xxxxxxx">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <input type="email" id="email"
+                            class="w-full bg-surface border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                            placeholder="john@example.com">
+                    </div>
+
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-400 mb-2">Service Type</label>
+                        <select id="service"
+                            class="w-full bg-surface border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            <option value="" class="bg-dark">Select a Service</option>
+                            <option value="repair" class="bg-dark">Laptop Repair</option>
+                            <option value="screen" class="bg-dark">Screen Replacement</option>
+                            <option value="software" class="bg-dark">Software Issue</option>
+                            <option value="access" class="bg-dark">Accessories/Sales</option>
+                            <option value="other" class="bg-dark">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                        <textarea id="message" rows="4"
+                            class="w-full bg-surface border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                            placeholder="Describe your issue..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-primary to-secondary text-white font-bold py-4 rounded-lg transform transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050507] pt-16 pb-8 border-t border-white/5 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500 text-sm">© 2026 MRD Tech Shop.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
